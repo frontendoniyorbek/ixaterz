@@ -3,100 +3,135 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Doniyorbek’s Blog</title>
-
-		<!-- Preload fonts -->
-		<link rel="preload" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin />
-		<link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin />
-		<link rel="preload" href="fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin />
-
-		<!-- Minified CSS -->
-		<!-- <link rel="stylesheet" href="css/main.css" /> -->
-		<link rel="stylesheet" href="css/styles.min.css" />
+		<title>Document</title>
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/main.css" />
 	</head>
 	<body>
 		<header class="header">
 			<div class="container header__container">
 				<a class="logo" href="/">
-					<img src="images/header/logo.webp" alt="logo" width="44" height="44" loading="lazy" />
-					<h1 class="logo__title">Doniyorbek’s Blog</h1>
+					<img src="images/header/logo.webp" alt="logo" width="44" height="44" />
+					<h2 class="logo__title">Doniyorbek’s Blog</h2>
 				</a>
 
 				<nav class="navbar">
 					<ul class="navbar__list">
-						<li><a class="navbar__link" href="#">Blog</a></li>
-						<li><a class="navbar__link" href="#">Newsletter</a></li>
-						<li><a class="navbar__link" href="#">Twitter</a></li>
+						<li class="navbar__item">
+							<a class="navbar__link" href="#">Blog</a>
+						</li>
+						<li class="navbar__item">
+							<a class="navbar__link" href="#">Newsletter</a>
+						</li>
+						<li class="navbar__item">
+							<a class="navbar__link" href="#">Twitter</a>
+						</li>
 					</ul>
 				</nav>
 			</div>
 		</header>
 
 		<main class="main">
-			<!-- HERO -->
-			<section class="hero">
+			<!-- HERO START -->
+			<div class="hero">
 				<div class="container hero__container">
 					<div class="hero__info">
-						<h2 class="hero__title">Hi there, I’m <span>Doniyorbek</span> 👨🏻‍💻</h2>
+						<h2 class="hero__title">Hi there, I’m <span>Doniyorbek</span>👨🏻‍💻</h2>
 						<p class="hero__text">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada nisi tellus, non imperdiet nisi tempor
-							at. Lorem ipsum dolor sit amet, <span>consectetur</span> adipiscing elit.
+							at. Lorem ipsum dolor sit amet, <span>consectetur</span> adipiscing elit, sed do eiusmod tempor incididunt ut labore
+							et <span>dolore</span> .
 						</p>
 						<ul class="hero__list">
-							<li>
-								<a href="#"><img src="images/hero/twitter.webp" alt="twitter" width="48" height="48" loading="lazy" /></a>
+							<li class="hero__item">
+								<a class="hero__link" href="#">
+									<img src="images/hero/twitter.webp" alt="twitter" width="60" height="60" />
+								</a>
 							</li>
-							<li>
-								<a href="#"><img src="images/hero/facebook.webp" alt="facebook" width="48" height="48" loading="lazy" /></a>
+
+							<li class="hero__item">
+								<a class="hero__link" href="#">
+									<img src="images/hero/facebook.webp" alt="facebook" width="60" height="60" />
+								</a>
 							</li>
-							<li>
-								<a href="#"><img src="images/hero/linkedin.webp" alt="linkedin" width="48" height="48" loading="lazy" /></a>
+
+							<li class="hero__item">
+								<a class="hero__link" href="#">
+									<img src="images/hero/linkedin.webp" alt="linkedin" width="60" height="60" />
+								</a>
 							</li>
-							<li>
-								<a href="#"><img src="images/hero/youtube.webp" alt="youtube" width="48" height="48" loading="lazy" /></a>
+
+							<li class="hero__item">
+								<a class="hero__link" href="#">
+									<img src="images/hero/Youtube.webp" alt="Youtube" width="60" height="60" />
+								</a>
 							</li>
 						</ul>
 					</div>
 					<div class="hero__img">
-						<img src="images/hero/person.webp" alt="person" width="300" height="300" loading="lazy" />
+						<img src="images/hero/person.webp" alt="person" width="300" height="300" />
 					</div>
 				</div>
-			</section>
+			</div>
+			<!-- HERO END -->
 
-			<!-- PROJECTS -->
+			<!-- POSTS START -->
 			<section class="posts">
 				<div class="container">
 					<h2 class="posts__title">Recent <span>Projects</span></h2>
+
 					<ul class="posts__list">
 						<li class="posts__item">
-							<img src="images/posts/project.webp" alt="project1" width="250" height="231" loading="lazy" />
+							<div class="posts__img-wrapper">
+								<img src="images/posts/project.webp" alt="project" width="250" height="231" />
+							</div>
 							<div class="posts__info">
-								<h3 class="posts__info-title">Project1</h3>
-								<button class="posts__info-btn"><span>Web Design</span></button>
-								<p class="posts__info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum.</p>
+								<div class="posts__info-top">
+									<h3 class="posts__info-title">Project1</h3>
+									<button class="posts__info-btn"><span>Web Design</span></button>
+								</div>
+								<p class="posts__info-text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum. Nunc non posuere consectetur,
+									justo erat semper enim, non hendrerit dui odio id enim.
+								</p>
 							</div>
 						</li>
 
 						<li class="posts__item">
-							<img src="images/posts/project2.webp" alt="project2" width="250" height="231" loading="lazy" />
+							<div class="posts__img-wrapper">
+								<img src="images/posts/project2.webp" alt="project" width="250" height="231" />
+							</div>
 							<div class="posts__info">
-								<h3 class="posts__info-title">Project2</h3>
-								<button class="posts__info-btn posts__info-btn2"><span>Next.js</span></button>
-								<p class="posts__info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum.</p>
+								<div class="posts__info-top">
+									<h3 class="posts__info-title">Project2</h3>
+									<button class="posts__info-btn posts__info-btn2"><span>Next.js</span></button>
+								</div>
+								<p class="posts__info-text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum. Nunc non posuere consectetur,
+									justo erat semper enim, non hendrerit dui odio id enim.
+								</p>
 							</div>
 						</li>
 
 						<li class="posts__item">
-							<img src="images/posts/project3.webp" alt="project3" width="250" height="231" loading="lazy" />
+							<div class="posts__img-wrapper">
+								<img src="images/posts/project3.webp" alt="project" width="250" height="231" />
+							</div>
 							<div class="posts__info">
-								<h3 class="posts__info-title">Project3</h3>
-								<button class="posts__info-btn posts__info-btn3"><span>Awesome feature</span></button>
-								<p class="posts__info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum.</p>
+								<div class="posts__info-top">
+									<h3 class="posts__info-title">Project3</h3>
+									<button class="posts__info-btn posts__info-btn3"><span>Awesome feature</span></button>
+								</div>
+								<p class="posts__info-text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum. Nunc non posuere consectetur,
+									justo erat semper enim, non hendrerit dui odio id enim.
+								</p>
 							</div>
 						</li>
 					</ul>
 				</div>
 			</section>
+			<!-- POSTS END -->
 		</main>
 	</body>
 </html>
